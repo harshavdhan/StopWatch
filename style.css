@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+#stopwatchDuration {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: #00ffcc;
+}
+
+#laps {
+    height: 150px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    list-style: none;
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#laps li {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#lapsButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#lapsButton button {
+    flex: 1;
+    padding: 1rem;
+    background: #00ffcc;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#lapsButton button:hover {
+    background: #009999;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:700px) {
+    .container {
+        width: 300px;
+    }
+
+    #stopwatchDuration {
+        font-size: 2rem;
+    }
+
+    #lapsButton button {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+}
